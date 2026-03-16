@@ -8,6 +8,7 @@
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/gap.h>
 #include <dk_buttons_and_leds.h>
+#include "ad_ext_data.h"
 
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
@@ -145,7 +146,7 @@ int main(void)
 		return 0;
 	}
 
-	err = bt_le_ext_adv_set_data(adv_set, ad, ARRAY_SIZE(ad), NULL, 0);
+	err = bt_le_ext_adv_set_data(adv_set, ad_ext, ad_ext_size, NULL, 0);
 	if (err) {
 		return 0;
 	}
