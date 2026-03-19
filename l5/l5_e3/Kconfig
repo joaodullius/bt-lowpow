@@ -1,0 +1,10 @@
+source "Kconfig.zephyr"
+
+menu "Lesson 5 Exercise 3 config"
+
+config PATTERN_TIMER_W_CPU
+    depends on NRFX_TIMER
+    bool "Pattern timer with CPU workflow"
+    default n 
+
+endmenu
