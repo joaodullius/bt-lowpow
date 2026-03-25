@@ -166,7 +166,7 @@ static void bt_notif_enabled_cb(enum bt_nus_send_status status)
             
             break;
         case BT_NUS_SEND_STATUS_DISABLED:
-            k_timer_stop(&loop_restart_timer);
+            
             break;
         break;
     }
