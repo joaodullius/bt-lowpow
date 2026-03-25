@@ -159,10 +159,10 @@ static void bt_receive_cb(struct bt_conn *conn, const uint8_t *const data,
 
 static void bt_notif_enabled_cb(enum bt_nus_send_status status)
 {
+    /* STEP 9.4 - Start the timer only when notifications are enabled */
     switch (status) 
     {
         case BT_NUS_SEND_STATUS_ENABLED:
-            /* STEP 9.4 - Start the timer to begin sending data packets */
             
             break;
         case BT_NUS_SEND_STATUS_DISABLED:
