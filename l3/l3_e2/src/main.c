@@ -88,8 +88,19 @@ static void advertising_start(void)
 /* STEP 7.2 - Request a data length update */
 
 
-/* STEP 15.2 Request a PHY update */
-
+static void request_phy_update(struct bt_conn *conn)
+{
+    int err;
+    const struct bt_conn_le_phy_param preferred_phy = {
+        .options = BT_CONN_LE_PHY_OPT_NONE,
+        /* STEP 15 - Set the preferred PHY to 2M */
+        .pref_rx_phy = BT_GAP_LE_PHY_1M,
+        .pref_tx_phy = BT_GAP_LE_PHY_1M,
+    };
+    err = bt_conn_le_phy_update(conn, &preferred_phy);
+    if (err) {
+    }
+}
 
 
 static void connected(struct bt_conn *conn, uint8_t err)
@@ -110,14 +121,14 @@ if (err) {
 	return;
 }
 
+ request_phy_update(current_conn);
+
  /* STEP 8 - Request an MTU exchange */
  
 
  /* STEP 12 - Request a data length update */
  
 
- /* STEP 15.3 - Request a PHY update */
- 
 }
 
 static void disconnected(struct bt_conn *conn, uint8_t reason)
