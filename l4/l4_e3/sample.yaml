@@ -21,5 +21,5 @@ common:
       - nrf54lm20dk/nrf54lm20a/cpuapp
 
 tests:
-  l4_e3: {}
+  l4.e3: {}
 
