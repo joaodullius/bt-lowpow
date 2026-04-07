@@ -38,7 +38,7 @@
 
 #define USER_BUTTON             DK_BTN1_MSK
 
-/* STEP 5.2 Define advertising settings*/
+/* STEP 8.2 Define advertising settings*/
 
 static bool app_button_state;
 static struct k_work adv_work;
@@ -55,7 +55,7 @@ static const struct bt_data sd[] = {
 
 static void adv_work_handler(struct k_work *work)
 {
-    /* STEP 5.3 Apply defined settings for the advertising process */
+    /* STEP 8.3 Apply defined settings for the advertising process */
 
     if (err) {
         printk("Advertising failed to start (err %d)\n", err);
