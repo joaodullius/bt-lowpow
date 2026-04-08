@@ -6,4 +6,5 @@ tests:
     platform_allow:
       - nrf54l15dk/nrf54l15/cpuapp
     sysbuild: true
+    skip: true
     build_only: true

@@ -13,5 +13,5 @@ common:
 
 
 tests:
-  l5_e2_sol: {} 
+  l5.e2_sol: {} 
   
