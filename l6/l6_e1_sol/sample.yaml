@@ -2,8 +2,12 @@ sample:
   name: Lesson 6 Exercise - PMIC SW development
 
 tests:
-  sample.l6_e1:
+  sample.l6_e1_sol:
+    extra_args: 
+      - DTC_OVERLAY_FILE="./boards/nrf54l15dk_nrf54l15_cpuapp.overlay;npm2100_pmic.overlay;pmic_gpios.overlay"
     platform_allow:
+      - nrf54l15dk/nrf54l15/cpuapp
+    integration_platforms:
       - nrf54l15dk/nrf54l15/cpuapp
     sysbuild: true
     build_only: true
