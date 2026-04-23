@@ -8,7 +8,7 @@ config USE_PPI_WORKFLOW
 
 config GPIO_EVENT_PERIOD_US
     int "GPIO event period in microseconds"
-    default 10
+    default 500
 
 config GPIO_EVENTS_CNT
     int "Number of GPIO events in one cycle"
@@ -16,6 +16,6 @@ config GPIO_EVENTS_CNT
 
 config PWM_OUTPUT_PERIOD_US
     int "PWM output period in microseconds"
-    default 100
+    default 5000
 
 endmenu
