@@ -31,7 +31,7 @@
 #endif
 
 
-/* STEP 4.1 - Include the nrf_memconf library and disable unused sections */
+/* STEP 4.1 - Define a memory bitmask */
 #include <hal/nrf_memconf.h>
 
 #define RAM_96KB_DIS_SECTION_BITMASK (0x000000F8)
@@ -202,10 +202,10 @@ int main(void)
 {
     int err;
 
-    /* STEP 4.2 Disable unused memory blocks */
+    /* STEP 4.2 - Disable unused memory blocks */
     nrf_memconf_ramblock_control_mask_enable_set(NRF_MEMCONF, 0, RAM_96KB_DIS_SECTION_BITMASK, false);
 
-    /* STEP 5.3 Power down unused RAM */
+    /* STEP 5.3 - Power down unused RAM */
     power_down_unused_ram();
 
     printk("Starting Bluetooth Peripheral LBS sample\n");

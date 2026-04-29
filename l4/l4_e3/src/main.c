@@ -30,7 +30,7 @@
 #include <ram_pwrdn.h>
 #endif
 
-/* STEP 4.1 Define memory bitmask */
+/* STEP 4.1 - Define memory bitmask */
 
 #define DEVICE_NAME             CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN         (sizeof(DEVICE_NAME) - 1)
@@ -198,8 +198,11 @@ int main(void)
     int err;
 
     /* STEP 4.2 Disable unused memory blocks */
+
+
     /* STEP 5.3 Power down unused RAM */
 
+    
     printk("Starting Bluetooth Peripheral LBS sample\n");
 
     if (IS_ENABLED(CONFIG_BT_LBS_SECURITY_ENABLED)) {
