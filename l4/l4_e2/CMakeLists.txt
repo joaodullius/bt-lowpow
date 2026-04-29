@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 3.20.0)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
-project(lesson_4_e2)
+project(bt-lowpower)
 
 set(SOURCES src/main.c)
 

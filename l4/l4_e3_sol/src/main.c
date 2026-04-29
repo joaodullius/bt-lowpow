@@ -31,8 +31,9 @@
 #endif
 
 
-/* STEP 4.1 Define memory bitmask */
+/* STEP 4.1 - Include the nrf_memconf library and disable unused sections */
 #include <hal/nrf_memconf.h>
+
 #define RAM_96KB_DIS_SECTION_BITMASK (0x000000F8)
 
 
