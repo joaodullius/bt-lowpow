@@ -14,8 +14,8 @@
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 
 /* STEP 1 - Define the advertising parameter for non-connectable advertising */
-//const struct bt_le_adv_param *param = BT_LE_ADV_PARAM(BT_LE_ADV_OPT_NONE, \
-													  BT_GAP_ADV_SLOW_INT_MIN, BT_GAP_ADV_SLOW_INT_MAX, NULL);
+/*const struct bt_le_adv_param *param = BT_LE_ADV_PARAM(BT_LE_ADV_OPT_NONE, \
+													  BT_GAP_ADV_SLOW_INT_MIN, BT_GAP_ADV_SLOW_INT_MAX, NULL);*/
 
 /* STEP 6 - Advertise only on channels 37 and 38 */
 const struct bt_le_adv_param *param = BT_LE_ADV_PARAM(BT_LE_ADV_OPT_NONE | BT_LE_ADV_OPT_DISABLE_CHAN_39, \
