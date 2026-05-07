@@ -1,1 +1,1 @@
-/* STEP 4 - Turn off the low frequency clock, RAM sections for CRACKEN and ICACHE and enter system off */
+/* STEP 4.2 - Turn off the low frequency clock, RAM sections for CRACKEN and ICACHE and enter system off */
