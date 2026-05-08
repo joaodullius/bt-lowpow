@@ -2,7 +2,11 @@
 #include <hal/nrf_gpio.h>
 #include <helpers.h>
 
+#if defined(NRF54LS05_XXAA) || defined(NRF54LS05B_XXAA)
+#define GRTC_PWM_PIN 0x01
+#else
 #define GRTC_PWM_PIN 0x03
+#endif
 
 void set_grtc_pwm(uint8_t duty_cycle)
 {
