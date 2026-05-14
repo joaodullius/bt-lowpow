@@ -205,8 +205,8 @@ int main(void)
     /* STEP 4.2 - Disable unused memory blocks */
     nrf_memconf_ramblock_control_mask_enable_set(NRF_MEMCONF, 0, RAM_96KB_DIS_SECTION_BITMASK, false);
 
-    /* STEP 5.3 - Power down unused RAM */
-  //  power_down_unused_ram();
+    /* STEP 5.2 - Power down unused RAM */
+    power_down_unused_ram();
 
     printk("Starting Bluetooth Peripheral LBS sample\n");
 

@@ -200,7 +200,7 @@ int main(void)
     /* STEP 4.2 Disable unused memory blocks */
 
 
-    /* STEP 5.3 Power down unused RAM */
+    /* STEP 5.2 Power down unused RAM */
 
     
     printk("Starting Bluetooth Peripheral LBS sample\n");
