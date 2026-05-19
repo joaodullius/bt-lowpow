@@ -1,5 +1,5 @@
 # Designing Low Power Bluetooth LE Devices Course Exercises
-This repository is part of the [Designing Low Power Bluetooth LE Products](https://academy.nordicsemi.com/courses/designing-low-power-bluetooth-le-products/) course by [Nordic Developer Academy](https://academy.nordicsemi.com).
+This repository is part of the [Designing Low-Power Bluetooth LE Products](https://academy.nordicsemi.com/courses/designing-low-power-bluetooth-le-products/) course by [Nordic Developer Academy](https://academy.nordicsemi.com).
 
 Designing Low-Power Bluetooth LE Products is a hands-on course focused on building Bluetooth LE products for minimal power consumption and extended battery life.
 
