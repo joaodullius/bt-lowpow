@@ -1,7 +1,7 @@
 # Designing Low Power Bluetooth LE Devices Course Exercises
-This repository is part of the [Designing Low Power Bluetooth LE Devices](https://academy.nordicsemi.com/courses/designing-low-power-bluetooth-le-products/) course by [Nordic Developer Academy](https://academy.nordicsemi.com).
+This repository is part of the [Designing Low Power Bluetooth LE Products](https://academy.nordicsemi.com/courses/designing-low-power-bluetooth-le-products/) course by [Nordic Developer Academy](https://academy.nordicsemi.com).
 
-The Designing Low Power Bluetooth LE Devices course is an online, self-paced course that focuses of ...  using Nordic Semiconductor devices (nRF54L Series).
+Designing Low-Power Bluetooth LE Products is a hands-on course focused on building Bluetooth LE products for minimal power consumption and extended battery life.
 
 This repository contains the exercise code base and solutions. Make sure to select the branch that corresponds with the nRF Connect SDK version of your choosing:
 <ul>
